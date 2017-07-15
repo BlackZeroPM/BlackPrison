@@ -30,8 +30,8 @@ class Main extends PluginBase implements Listener{
 	   if($event->isCancelled()) return;
 	   $name = $event->getPlayer()->getName();
 	   $player = $event->getPlayer();
-	      if(self::$breaks[$name] >= 100){
-	         $event->getPlayer()->sendMessage(TF::YELLOW . "Bạn đã đập được 100 block " . TF::AQUA . "Đào nhanh trong 1 phút!");
+	      if(self::$breaks[$name] >= 10){
+	         $event->getPlayer()->sendMessage(TF::YELLOW . "Bạn đã đập được 10 block " . TF::AQUA . "Đào nhanh trong 1 phút!");
 	         self::giveEffect($player, 3, 60, 5);
 	         self::$breaks[$name] = 0; # Reset the counter, to avoid ^^ spam.
 	      }else{
