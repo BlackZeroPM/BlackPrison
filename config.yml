@@ -1,0 +1,21 @@
+---
+version: 2.3.5
+motd:
+  '# ticks': line delay when showing multi-line motd texts.
+  ticks: 15
+  '# auto-motd': Automatically shows motd when entering world
+  auto-motd: true
+features:
+  max-players: false
+  protect: true
+  border: true
+  pvp: true
+  motd: false
+  no-explode: false
+  unbreakable: true
+  bancmds: true
+  banitem: true
+  gamemode: true
+  gm-save-inv: true
+  death-save-inv: true
+...
